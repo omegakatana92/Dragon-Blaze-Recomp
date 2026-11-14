@@ -1,0 +1,60 @@
+# Game data — never commit a ROM or extracted assets
+/rom/
+/roms/
+*.zip
+*.7z
+*.chd
+*.bin
+*.rom
+/assets/
+/assets-extracted/
+
+# Generated translated C and build output
+/build/
+/build-*/
+/dist/
+/generated/
+*.exe
+*.dll
+*.lib
+*.a
+*.o
+*.obj
+*.pdb
+*.ilk
+*.AppImage
+*.so
+*.dylib
+*.dSYM/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+.ninja_deps
+.ninja_log
+compile_commands.json
+
+# Development captures
+/snap/
+/cfg/
+/nvram/
+*.avi
+*.wav
+*.log
+*.hashes
+*-shot.png
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor / OS
+.vscode/
+.idea/
+*.user
+.DS_Store
+Thumbs.db
+
+# Build system files are shipped in the release source package, not in git
+CMakeLists.txt
+/cmake/

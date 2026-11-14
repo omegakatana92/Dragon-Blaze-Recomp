@@ -1,0 +1,13 @@
+#!/bin/sh
+# AppImage entry point.  The binary links SDL2 statically and needs only
+# glibc >= 2.29; display/audio backends (X11, Wayland, PulseAudio/PipeWire,
+# ALSA) are loaded from the host at run time.  Settings, saves and NVRAM go to
+# the user's data folder (~/.local/share/...); the AppImage itself is
+# read-only.  The game profile is read from usr/share/dragnblz/profiles.
+HERE=$(dirname "$(readlink -f "$0")")
+# Under gamescope (Steam Deck Game Mode) prefer X11 via XWayland, which is
+# what gamescope provides to games; Desktop Mode keeps SDL's own choice.
+if [ -n "$GAMESCOPE_WAYLAND_DISPLAY" ] && [ -z "$SDL_VIDEODRIVER" ]; then
+  export SDL_VIDEODRIVER=x11
+fi
+exec "$HERE/usr/bin/dragnblz" "$@"

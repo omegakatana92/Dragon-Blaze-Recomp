@@ -1,0 +1,24 @@
+{
+  "id": "dragnblz",
+  "title": "Dragon Blaze",
+  "subtitle": "native port",
+  "manufacturer": "Psikyo",
+  "year": 2000,
+  "rom_hint": "dragnblz.zip",
+  "players": 2,
+  "display": {
+    "aspect": "4:3",
+    "rotation": 270,
+    "integer_scale": false
+  },
+  "features": {
+    "save_states": true,
+    "rewind": true,
+    "nvram": true,
+    "input_movies": true,
+    "gadgets": true,
+    "input_display": true,
+    "screenshots": true,
+    "widescreen": false
+  }
+}

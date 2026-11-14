@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Dragon Blaze
+Comment=Native port of the 2000 arcade game (requires your own dragnblz.zip)
+Exec=dragnblz %f
+Icon=dragnblz
+Terminal=false
+Categories=Game;ArcadeGame;
+MimeType=application/zip;
